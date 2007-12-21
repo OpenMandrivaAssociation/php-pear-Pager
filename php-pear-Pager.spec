@@ -17,6 +17,7 @@ Requires:	php-pear
 Obsoletes:	php-pear-Pager_Sliding
 BuildArch:	noarch
 BuildRequires:	dos2unix
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 If you have data that needs paging (ie 1-10 on page one, 11-20 on page
