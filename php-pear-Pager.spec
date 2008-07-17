@@ -5,7 +5,7 @@
 Summary:	%{_pearname} - generic data paging class
 Name:		php-pear-%{_pearname}
 Version:	2.4.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
@@ -17,7 +17,7 @@ Requires:	php-pear
 Obsoletes:	php-pear-Pager_Sliding
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 If you have data that needs paging (ie 1-10 on page one, 11-20 on page
