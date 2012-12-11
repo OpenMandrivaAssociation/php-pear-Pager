@@ -66,3 +66,87 @@ fi
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/%{_class}.php
 %{_datadir}/pear/packages/%{upstream_name}.xml
+
+
+%changelog
+* Fri Dec 16 2011 Oden Eriksson <oeriksson@mandriva.com> 2.4.8-5mdv2012.0
++ Revision: 742261
+- fix major breakage by careless packager
+
+* Fri May 27 2011 Oden Eriksson <oeriksson@mandriva.com> 2.4.8-4
++ Revision: 679566
+- mass rebuild
+
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 2.4.8-3mdv2011.0
++ Revision: 613758
+- the mass rebuild of 2010.1 packages
+
+* Sat Nov 21 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.4.8-2mdv2010.1
++ Revision: 467940
+- spec cleanup
+- use pear installer
+- don't ship tests, even in documentation
+- own all directories
+- use rpm filetriggers starting from mandriva 2010.1
+
+* Sun Jun 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.4.8-1mdv2010.0
++ Revision: 383556
+- update to new version 2.4.8
+
+* Thu Jan 01 2009 Oden Eriksson <oeriksson@mandriva.com> 2.4.7-2mdv2009.1
++ Revision: 322654
+- rebuild
+
+* Sun Oct 12 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.4.7-1mdv2009.1
++ Revision: 292887
+- update to new version 2.4.7
+
+* Thu Jul 17 2008 Oden Eriksson <oeriksson@mandriva.com> 2.4.3-2mdv2009.0
++ Revision: 237054
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <blino@mandriva.org> 2.4.3-1mdv2008.1
++ Revision: 136415
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Fri Apr 20 2007 Oden Eriksson <oeriksson@mandriva.com> 2.4.3-1mdv2008.0
++ Revision: 15743
+- 2.4.3
+
+
+* Sat Sep 23 2006 David Walluck <walluck@mandriva.org> 2.4.1-2mdv2007.0
+- Pager_Wrapper.php is required by some applications
+- Provides: php-pear-Pager_Sliding
+
+* Sat May 20 2006 Oden Eriksson <oeriksson@mandriva.com> 2.4.1-1mdk
+- 2.4.1
+
+* Fri Feb 10 2006 Oden Eriksson <oeriksson@mandriva.com> 2.3.6-1mdk
+- 2.3.6
+- new group (Development/PHP)
+
+* Fri Aug 26 2005 Oden Eriksson <oeriksson@mandriva.com> 2.3.3-4mdk
+- rebuilt to fix auto deps
+
+* Wed Aug 10 2005 Oden Eriksson <oeriksson@mandriva.com> 2.3.3-3mdk
+- rebuilt to use new pear auto deps/reqs from pld
+
+* Sun Jul 31 2005 Oden Eriksson <oeriksson@mandriva.com> 2.3.3-2mdk
+- fix deps
+
+* Thu Jul 21 2005 Oden Eriksson <oeriksson@mandriva.com> 2.3.3-1mdk
+- 2.3.3
+
+* Thu Jul 21 2005 Oden Eriksson <oeriksson@mandriva.com> 2.3.1-3mdk
+- reworked the %%post and %%preun stuff, like in conectiva
+- fix deps
+
+* Wed Jul 20 2005 Oden Eriksson <oeriksson@mandriva.com> 2.3.1-2mdk
+- fix deps
+
+* Tue Jul 19 2005 Oden Eriksson <oeriksson@mandriva.com> 2.3.1-1mdk
+- initial Mandriva package (PLD import)
+
