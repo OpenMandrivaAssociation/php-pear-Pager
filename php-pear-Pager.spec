@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	2.4.8
-Release:	%mkrel 5
+Release:	6
 Summary:	Generic data paging class
 License:	PHP License
 Group:		Development/PHP
@@ -16,7 +16,6 @@ Requires:	php-pear
 Obsoletes:	php-pear-Pager_Sliding
 BuildArch:	noarch
 BuildRequires:	php-pear
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 If you have data that needs paging (ie 1-10 on page one, 11-20 on page
@@ -31,7 +30,6 @@ adding the correct page id to it.
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -44,21 +42,8 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
-%post
-%if %mdkversion < 201000
-pear install --nodeps --soft --force --register-only \
-    %{_datadir}/pear/packages/%{upstream_name}.xml >/dev/null || :
-%endif
 
-%preun
-%if %mdkversion < 201000
-if [ "$1" -eq "0" ]; then
-    pear uninstall --nodeps --ignore-errors --register-only \
-        %{upstream_name} >/dev/null || :
-fi
-%endif
 
 %files
 %defattr(-,root,root)
