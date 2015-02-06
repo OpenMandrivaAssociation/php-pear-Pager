@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	2.4.9
-Release:	1
+Release:	2
 Summary:	Generic data paging class
 
 License:	PHP License
