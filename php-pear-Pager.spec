@@ -8,7 +8,7 @@ Summary:	Generic data paging class
 
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/Pager/
+URL:		https://pear.php.net/package/Pager/
 Source0:	http://download.pear.php.net/package/Pager-%{version}.tgz
 Provides:	pear(Pager/Wrapper.php)
 Requires(post): php-pear
